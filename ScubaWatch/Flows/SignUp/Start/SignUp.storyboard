@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="Y6W-OH-hqX" customClass="SignUpViewController" customModule="ScubaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="TQe-ev-0Jk">
+                                <rect key="frame" x="16" y="316.33333333333326" width="361" height="265.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="poD-Yp-FJz">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="132.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1P-3y-Fbn" customClass="BoldLabel" customModule="ScubaWatch" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8u-2b-pVY" customClass="RegularLabel" customModule="ScubaWatch" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="20.333333333333371" width="361" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9C-4O-wfN">
+                                                <rect key="frame" x="0.0" y="40.666666666666686" width="361" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="fBi-Ii-X12"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ga-Hs-IqQ" customClass="FillButton" customModule="ScubaWatch" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="88.666666666666686" width="361" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="GRy-Q0-f3f"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBY-fs-Ksl" customClass="LineView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="148.66666666666669" width="361" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="CD6-P7-Akx"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ac7-Pk-9Uw">
+                                        <rect key="frame" x="0.0" y="165.66666666666669" width="361" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjU-8A-nn1" customClass="BorderButton" customModule="ScubaWatch" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="ho9-Q7-Zji"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4q-dD-9Zx" customClass="BorderButton" customModule="ScubaWatch" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="54" width="361" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="fcD-Mw-cBK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="AH0-CE-wgc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AH0-CE-wgc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="AH0-CE-wgc"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TQe-ev-0Jk" secondAttribute="trailing" constant="16" id="HAd-ec-2Fr"/>
+                            <constraint firstItem="TQe-ev-0Jk" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="23" id="JRE-Bm-rny"/>
+                            <constraint firstItem="TQe-ev-0Jk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Njn-y0-8zs"/>
+                            <constraint firstItem="TQe-ev-0Jk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="rAw-Ov-83g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HAd-ec-2Fr"/>
+                                <exclude reference="rAw-Ov-83g"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="HAd-ec-2Fr"/>
+                                <include reference="rAw-Ov-83g"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="applButton" destination="4ga-Hs-IqQ" id="ooG-ts-fn8"/>
+                        <outlet property="emailButton" destination="cjU-8A-nn1" id="LyC-0M-nps"/>
+                        <outlet property="lineView" destination="TBY-fs-Ksl" id="IcZ-iK-4pB"/>
+                        <outlet property="loginButton" destination="h4q-dD-9Zx" id="YKM-np-WEA"/>
+                        <outlet property="subTitleLabel" destination="v8u-2b-pVY" id="8pK-9J-IHo"/>
+                        <outlet property="titleLabel" destination="N1P-3y-Fbn" id="LBh-cX-Cgp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-23"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="4ga-Hs-IqQ">
+            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
+        </designable>
+        <designable name="N1P-3y-Fbn">
+            <size key="intrinsicContentSize" width="21" height="20.333333333333332"/>
+        </designable>
+        <designable name="cjU-8A-nn1">
+            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
+        </designable>
+        <designable name="h4q-dD-9Zx">
+            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
+        </designable>
+        <designable name="v8u-2b-pVY">
+            <size key="intrinsicContentSize" width="21" height="20.333333333333332"/>
+        </designable>
+    </designables>
+</document>

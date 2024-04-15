@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sensor View Controller-->
+        <scene sceneID="F22-sZ-Yyf">
+            <objects>
+                <viewController storyboardIdentifier="SensorViewController" id="2DV-NO-BxM" customClass="SensorViewController" customModule="ScubaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ap-3K-WEu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ing-qk-V0F" customClass="BoldLabel" customModule="ScubaWatch" customModuleProvider="target">
+                                <rect key="frame" x="16" y="83" width="361" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="UB2-ID-04Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="EcW-h0-0Fu">
+                                <rect key="frame" x="16" y="299.66666666666669" width="361" height="56.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QH-BS-JC9" customClass="BoldLabel" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifz-mJ-Uy1" customClass="RegularLabel" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="36.333333333333314" width="361" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZq-RY-obm" customClass="FillButton" customModule="ScubaWatch" customModuleProvider="target">
+                                <rect key="frame" x="144.66666666666666" y="372.33333333333331" width="104" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="PZF-Js-BMx"/>
+                                    <constraint firstAttribute="height" constant="46" id="v7n-qK-oU5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hDa-DH-TeF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hDa-DH-TeF" firstAttribute="trailing" secondItem="Ing-qk-V0F" secondAttribute="trailing" constant="16" id="DiE-Xh-vuZ"/>
+                            <constraint firstItem="VZq-RY-obm" firstAttribute="top" secondItem="EcW-h0-0Fu" secondAttribute="bottom" constant="16" id="NMZ-0U-hRM"/>
+                            <constraint firstItem="EcW-h0-0Fu" firstAttribute="leading" secondItem="hDa-DH-TeF" secondAttribute="leading" constant="16" id="ROz-hn-YuX"/>
+                            <constraint firstItem="EcW-h0-0Fu" firstAttribute="centerY" secondItem="7ap-3K-WEu" secondAttribute="centerY" constant="-98" id="Z8d-ps-ZZC"/>
+                            <constraint firstItem="EcW-h0-0Fu" firstAttribute="centerX" secondItem="7ap-3K-WEu" secondAttribute="centerX" id="amt-07-9cO"/>
+                            <constraint firstItem="VZq-RY-obm" firstAttribute="centerX" secondItem="EcW-h0-0Fu" secondAttribute="centerX" id="bbk-55-Zcz"/>
+                            <constraint firstItem="Ing-qk-V0F" firstAttribute="top" secondItem="hDa-DH-TeF" secondAttribute="top" constant="24" id="sNG-C7-mzM"/>
+                            <constraint firstItem="hDa-DH-TeF" firstAttribute="trailing" secondItem="EcW-h0-0Fu" secondAttribute="trailing" constant="16" id="vPD-eF-Nk3"/>
+                            <constraint firstItem="Ing-qk-V0F" firstAttribute="leading" secondItem="hDa-DH-TeF" secondAttribute="leading" constant="16" id="xxG-5R-pWM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vPD-eF-Nk3"/>
+                                <exclude reference="ROz-hn-YuX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="vPD-eF-Nk3"/>
+                                <include reference="ROz-hn-YuX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Ifz-mJ-Uy1" id="SJe-HK-FNy"/>
+                        <outlet property="navTitleLabel" destination="Ing-qk-V0F" id="hsv-JI-DID"/>
+                        <outlet property="nextButton" destination="VZq-RY-obm" id="i1r-rj-xIf"/>
+                        <outlet property="titleLabel" destination="7QH-BS-JC9" id="F3n-Ye-LN2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJa-Sk-bEo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-23"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="7QH-BS-JC9">
+            <size key="intrinsicContentSize" width="41.333333333333336" height="20.333333333333332"/>
+        </designable>
+        <designable name="Ifz-mJ-Uy1">
+            <size key="intrinsicContentSize" width="41.333333333333336" height="20.333333333333332"/>
+        </designable>
+        <designable name="VZq-RY-obm">
+            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

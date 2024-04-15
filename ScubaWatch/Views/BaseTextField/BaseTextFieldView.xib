@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseTextFieldView" customModule="ScubaWatch" customModuleProvider="target">
+            <connections>
+                <outlet property="lineView" destination="B8g-W2-Gj9" id="ECy-Iz-OcB"/>
+                <outlet property="textField" destination="umi-oo-37l" id="LkU-mD-bcM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="umi-oo-37l">
+                    <rect key="frame" x="0.0" y="9" width="393" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8g-W2-Gj9" customClass="LineView" customModule="ScubaWatch" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="43" width="393" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NhR-47-2IF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="B8g-W2-Gj9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CvZ-GN-a6k"/>
+                <constraint firstAttribute="bottom" secondItem="B8g-W2-Gj9" secondAttribute="bottom" id="JIB-IN-DQ1"/>
+                <constraint firstItem="umi-oo-37l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ti6-fh-a2p"/>
+                <constraint firstItem="umi-oo-37l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="hrj-Ki-zK3"/>
+                <constraint firstAttribute="trailing" secondItem="umi-oo-37l" secondAttribute="trailing" id="wnj-f5-ONz"/>
+                <constraint firstAttribute="trailing" secondItem="B8g-W2-Gj9" secondAttribute="trailing" id="xxC-yX-XiK"/>
+                <constraint firstAttribute="bottom" secondItem="umi-oo-37l" secondAttribute="bottom" constant="9" id="zBD-yZ-lxb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35.877862595419849" y="-1.4084507042253522"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

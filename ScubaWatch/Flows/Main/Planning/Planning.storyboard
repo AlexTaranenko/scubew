@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Planning View Controller-->
+        <scene sceneID="yJq-TT-q6m">
+            <objects>
+                <viewController storyboardIdentifier="PlanningViewController" id="cCD-iz-cTN" customClass="PlanningViewController" customModule="ScubaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3Z-eN-n4r">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yEk-Jq-Ger">
+                                <rect key="frame" x="16" y="83" width="361" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPn-Wc-emf" customClass="TitleArrowView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="tD6-gK-LR8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eq7-L5-9yw" customClass="TitleArrowView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="361" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="6rm-8n-RCE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lRa-YI-D4q"/>
+                        <constraints>
+                            <constraint firstItem="lRa-YI-D4q" firstAttribute="trailing" secondItem="yEk-Jq-Ger" secondAttribute="trailing" constant="16" id="4WM-UZ-Hje"/>
+                            <constraint firstItem="lRa-YI-D4q" firstAttribute="trailing" secondItem="yEk-Jq-Ger" secondAttribute="trailing" constant="85" id="Dbi-IN-jUh"/>
+                            <constraint firstItem="yEk-Jq-Ger" firstAttribute="leading" secondItem="lRa-YI-D4q" secondAttribute="leading" constant="16" id="aVT-9s-xPK"/>
+                            <constraint firstItem="yEk-Jq-Ger" firstAttribute="top" secondItem="lRa-YI-D4q" secondAttribute="top" constant="24" id="bAn-xZ-ONn"/>
+                            <constraint firstItem="yEk-Jq-Ger" firstAttribute="leading" secondItem="lRa-YI-D4q" secondAttribute="leading" constant="85" id="qUv-9c-Sq6"/>
+                            <constraint firstItem="yEk-Jq-Ger" firstAttribute="top" secondItem="lRa-YI-D4q" secondAttribute="top" constant="84" id="yiu-un-ZLb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4WM-UZ-Hje"/>
+                                <exclude reference="Dbi-IN-jUh"/>
+                                <exclude reference="aVT-9s-xPK"/>
+                                <exclude reference="bAn-xZ-ONn"/>
+                                <exclude reference="qUv-9c-Sq6"/>
+                                <exclude reference="yiu-un-ZLb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4WM-UZ-Hje"/>
+                                <include reference="aVT-9s-xPK"/>
+                                <include reference="bAn-xZ-ONn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Dbi-IN-jUh"/>
+                                <include reference="qUv-9c-Sq6"/>
+                                <include reference="yiu-un-ZLb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outletCollection property="titleArrowViews" destination="lPn-Wc-emf" collectionClass="NSMutableArray" id="Evh-fi-iFw"/>
+                        <outletCollection property="titleArrowViews" destination="Eq7-L5-9yw" collectionClass="NSMutableArray" id="Qh3-Yb-IGO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTS-QU-iy7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="-23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

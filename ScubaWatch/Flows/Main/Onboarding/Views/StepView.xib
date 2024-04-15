@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepView" customModule="ScubaWatch" customModuleProvider="target">
+            <connections>
+                <outletCollection property="lineViews" destination="tDY-aD-awO" collectionClass="NSMutableArray" id="n5k-1d-H0E"/>
+                <outletCollection property="lineViews" destination="CU4-yb-TdW" collectionClass="NSMutableArray" id="RRf-7a-cWb"/>
+                <outletCollection property="stepImages" destination="21R-31-UOZ" collectionClass="NSMutableArray" id="dk7-tI-jPx"/>
+                <outletCollection property="stepImages" destination="hTc-1R-JWJ" collectionClass="NSMutableArray" id="OJI-EO-b5a"/>
+                <outletCollection property="stepImages" destination="35b-Gy-EwZ" collectionClass="NSMutableArray" id="WQf-xQ-gia"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vFT-wG-5Ec">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stepOff" translatesAutoresizingMaskIntoConstraints="NO" id="21R-31-UOZ">
+                            <rect key="frame" x="0.0" y="8" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="c67-hg-TbM"/>
+                                <constraint firstAttribute="height" constant="28" id="vNQ-M7-e7K"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpy-4O-wl8">
+                            <rect key="frame" x="28" y="0.0" width="154.66666666666666" height="44"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDY-aD-awO" customClass="LineView" customModule="ScubaWatch" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="21" width="154.66666666666666" height="2"/>
+                                    <color key="backgroundColor" name="primaryBlue"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="Lmx-uO-iu3"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="tDY-aD-awO" secondAttribute="trailing" id="L0h-OY-9EH"/>
+                                <constraint firstItem="tDY-aD-awO" firstAttribute="leading" secondItem="Mpy-4O-wl8" secondAttribute="leading" id="p75-db-JyB"/>
+                                <constraint firstItem="tDY-aD-awO" firstAttribute="centerY" secondItem="Mpy-4O-wl8" secondAttribute="centerY" id="rbj-lr-ZyO"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stepOn" translatesAutoresizingMaskIntoConstraints="NO" id="hTc-1R-JWJ">
+                            <rect key="frame" x="182.66666666666666" y="8" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="VQ3-8S-mr3"/>
+                                <constraint firstAttribute="height" constant="28" id="xi9-SZ-BB4"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VV-sl-jqI">
+                            <rect key="frame" x="210.66666666666663" y="0.0" width="154.33333333333337" height="44"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CU4-yb-TdW" customClass="LineView" customModule="ScubaWatch" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="21" width="154.33333333333334" height="2"/>
+                                    <color key="backgroundColor" name="primaryBlue"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="O6c-mR-LWq"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="CU4-yb-TdW" firstAttribute="leading" secondItem="5VV-sl-jqI" secondAttribute="leading" id="OT2-te-xLQ"/>
+                                <constraint firstAttribute="trailing" secondItem="CU4-yb-TdW" secondAttribute="trailing" id="cMF-dY-dhA"/>
+                                <constraint firstItem="CU4-yb-TdW" firstAttribute="centerY" secondItem="5VV-sl-jqI" secondAttribute="centerY" id="nC1-z3-bPf"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stepOff" translatesAutoresizingMaskIntoConstraints="NO" id="35b-Gy-EwZ">
+                            <rect key="frame" x="365" y="8" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="MRC-2e-kq0"/>
+                                <constraint firstAttribute="width" constant="28" id="wJO-TC-eca"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="5VV-sl-jqI" firstAttribute="width" secondItem="Mpy-4O-wl8" secondAttribute="width" id="30f-6X-j1Y"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vFT-wG-5Ec" secondAttribute="bottom" id="3JM-qc-p9T"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vFT-wG-5Ec" secondAttribute="trailing" id="PVa-z2-0lx"/>
+                <constraint firstItem="vFT-wG-5Ec" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SFf-8h-cp5"/>
+                <constraint firstItem="vFT-wG-5Ec" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gZy-x0-xuw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="36" y="-1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="stepOff" width="44" height="44"/>
+        <image name="stepOn" width="44" height="44"/>
+        <namedColor name="primaryBlue">
+            <color red="0.26666666666666666" green="0.52549019607843139" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

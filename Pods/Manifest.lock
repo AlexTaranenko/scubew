@@ -1,0 +1,42 @@
+PODS:
+  - DeviceKit (4.9.0)
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
+  - KRActivityIndicatorView (3.0.7)
+  - KRProgressHUD (3.4.7):
+    - KRActivityIndicatorView (= 3.0.7)
+  - RESegmentedControl (0.5.4)
+  - SwiftGen (6.6.2)
+  - SwiftLint (0.52.3)
+
+DEPENDENCIES:
+  - DeviceKit (~> 4.0)
+  - DGCharts
+  - KRProgressHUD
+  - RESegmentedControl
+  - SwiftGen (~> 6.0)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - DeviceKit
+    - DGCharts
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - RESegmentedControl
+    - SwiftGen
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  DeviceKit: 847709bf70b78fd9ab765bd571fb9f5f815c3fc1
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
+  KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
+  KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
+  RESegmentedControl: 393063d6b6ffceb6aea85c00772977f3da2d5c53
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  SwiftLint: 76ec9c62ad369cff2937474cb34c9af3fa270b7b
+
+PODFILE CHECKSUM: 42f7b1d065dad56a3d7e4ff0793443cf690dab6e
+
+COCOAPODS: 1.11.3

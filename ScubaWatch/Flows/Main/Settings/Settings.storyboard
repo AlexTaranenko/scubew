@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="ScubaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YwX-En-xLL">
+                                <rect key="frame" x="16" y="83" width="361" height="132"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rM-Uu-zLm" customClass="TitleArrowView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="KM4-mP-T2K"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xi9-lE-A58" customClass="TitleArrowView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44" width="361" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="bTO-P7-aJg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEb-Sr-cjy" customClass="TitleArrowView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="361" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="9y5-Wd-Ziz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhm-pU-Vpp" customClass="BorderButton" customModule="ScubaWatch" customModuleProvider="target">
+                                <rect key="frame" x="16" y="263" width="361" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="P6T-NM-A1w"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="Nhm-pU-Vpp" firstAttribute="top" secondItem="YwX-En-xLL" secondAttribute="bottom" constant="48" id="19A-FC-gKO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YwX-En-xLL" secondAttribute="trailing" constant="16" id="1kI-jy-0yq"/>
+                            <constraint firstItem="YwX-En-xLL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="7bp-cC-hWP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YwX-En-xLL" secondAttribute="trailing" constant="85" id="M1C-eb-BL9"/>
+                            <constraint firstItem="YwX-En-xLL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="XtW-jO-zrW"/>
+                            <constraint firstItem="Nhm-pU-Vpp" firstAttribute="trailing" secondItem="YwX-En-xLL" secondAttribute="trailing" constant="-153" id="Y76-fk-hb1"/>
+                            <constraint firstItem="Nhm-pU-Vpp" firstAttribute="leading" secondItem="YwX-En-xLL" secondAttribute="leading" id="fIY-N7-o80"/>
+                            <constraint firstItem="Nhm-pU-Vpp" firstAttribute="leading" secondItem="YwX-En-xLL" secondAttribute="leading" constant="153" id="oEl-tz-lUE"/>
+                            <constraint firstItem="YwX-En-xLL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="85" id="r2B-Pp-6Vs"/>
+                            <constraint firstItem="YwX-En-xLL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="84" id="s0R-8Q-cof"/>
+                            <constraint firstItem="Nhm-pU-Vpp" firstAttribute="trailing" secondItem="YwX-En-xLL" secondAttribute="trailing" id="sbV-kv-3X7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1kI-jy-0yq"/>
+                                <exclude reference="M1C-eb-BL9"/>
+                                <exclude reference="7bp-cC-hWP"/>
+                                <exclude reference="XtW-jO-zrW"/>
+                                <exclude reference="r2B-Pp-6Vs"/>
+                                <exclude reference="s0R-8Q-cof"/>
+                                <exclude reference="Y76-fk-hb1"/>
+                                <exclude reference="fIY-N7-o80"/>
+                                <exclude reference="oEl-tz-lUE"/>
+                                <exclude reference="sbV-kv-3X7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="1kI-jy-0yq"/>
+                                <include reference="7bp-cC-hWP"/>
+                                <include reference="XtW-jO-zrW"/>
+                                <include reference="fIY-N7-o80"/>
+                                <include reference="sbV-kv-3X7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="M1C-eb-BL9"/>
+                                <include reference="r2B-Pp-6Vs"/>
+                                <include reference="s0R-8Q-cof"/>
+                                <include reference="Y76-fk-hb1"/>
+                                <include reference="oEl-tz-lUE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="logoutButton" destination="Nhm-pU-Vpp" id="vEt-c6-iTY"/>
+                        <outletCollection property="titleArrowViews" destination="5rM-Uu-zLm" collectionClass="NSMutableArray" id="h7K-Ri-dd9"/>
+                        <outletCollection property="titleArrowViews" destination="xi9-lE-A58" collectionClass="NSMutableArray" id="T6c-3g-ifv"/>
+                        <outletCollection property="titleArrowViews" destination="rEb-Sr-cjy" collectionClass="NSMutableArray" id="ItG-4B-EK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="-23"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Nhm-pU-Vpp">
+            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

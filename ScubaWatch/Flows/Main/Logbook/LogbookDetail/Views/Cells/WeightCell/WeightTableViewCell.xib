@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="WeightTableViewCell" customModule="ScubaWatch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="X1U-JK-2mB">
+                        <rect key="frame" x="16" y="0.0" width="288" height="160"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMX-5B-anC">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OL8-GE-4XM" customClass="BoldLabel" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="vV6-pe-WFS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-jj-7hv" customClass="LineView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="34" width="288" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="edU-fi-7od"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lLe-jj-7hv" firstAttribute="leading" secondItem="DMX-5B-anC" secondAttribute="leading" id="Hg9-lL-FYh"/>
+                                    <constraint firstAttribute="trailing" secondItem="OL8-GE-4XM" secondAttribute="trailing" id="IJ8-uf-jTq"/>
+                                    <constraint firstAttribute="height" constant="35" id="ap7-lX-AZg"/>
+                                    <constraint firstItem="OL8-GE-4XM" firstAttribute="top" secondItem="DMX-5B-anC" secondAttribute="top" id="eJy-Us-vCx"/>
+                                    <constraint firstItem="OL8-GE-4XM" firstAttribute="leading" secondItem="DMX-5B-anC" secondAttribute="leading" id="h7f-ea-Qvq"/>
+                                    <constraint firstAttribute="trailing" secondItem="lLe-jj-7hv" secondAttribute="trailing" id="mTP-4p-XgD"/>
+                                    <constraint firstAttribute="bottom" secondItem="lLe-jj-7hv" secondAttribute="bottom" id="ygt-ra-mlj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQY-qd-Kh7" customClass="PickerView" customModule="ScubaWatch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="35" width="288" height="125"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="332-jv-Bmp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="X1U-JK-2mB" secondAttribute="bottom" id="DyG-xc-Xga"/>
+                    <constraint firstAttribute="trailing" secondItem="X1U-JK-2mB" secondAttribute="trailing" constant="16" id="naK-yb-erL"/>
+                    <constraint firstItem="X1U-JK-2mB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ohS-aF-bID"/>
+                    <constraint firstItem="X1U-JK-2mB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="qrx-i1-O6f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lineView" destination="lLe-jj-7hv" id="mPq-MP-Rf5"/>
+                <outlet property="pickerView" destination="hQY-qd-Kh7" id="ruA-Ei-gwy"/>
+                <outlet property="titleLabel" destination="OL8-GE-4XM" id="9Us-Pz-A16"/>
+            </connections>
+            <point key="canvasLocation" x="77.862595419847324" y="44.366197183098592"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LocationDetailViewController" id="Y6W-OH-hqX" customClass="LocationDetailViewController" customModule="ScubaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kEf-Ym-OdQ">
+                                <rect key="frame" x="0.0" y="24" width="820" height="1115"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Wg-m0-BD0" customClass="BaseTableView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="820" height="1069"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ke-6J-dKj">
+                                        <rect key="frame" x="0.0" y="1069" width="820" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yha-NE-IZT" customClass="BorderButton" customModule="ScubaWatch" customModuleProvider="target">
+                                                <rect key="frame" x="97" y="0.0" width="626" height="46"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="yha-NE-IZT" firstAttribute="leading" secondItem="3Ke-6J-dKj" secondAttribute="leading" constant="16" id="65d-WS-qiP"/>
+                                            <constraint firstAttribute="trailing" secondItem="yha-NE-IZT" secondAttribute="trailing" constant="16" id="M8b-98-hlH"/>
+                                            <constraint firstItem="yha-NE-IZT" firstAttribute="leading" secondItem="3Ke-6J-dKj" secondAttribute="leading" constant="97" id="b9s-TJ-aE2"/>
+                                            <constraint firstAttribute="height" constant="46" id="ca3-HB-9qZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="yha-NE-IZT" secondAttribute="bottom" id="nQN-Wt-YEK"/>
+                                            <constraint firstAttribute="trailing" secondItem="yha-NE-IZT" secondAttribute="trailing" constant="97" id="od2-kq-jSw"/>
+                                            <constraint firstItem="yha-NE-IZT" firstAttribute="top" secondItem="3Ke-6J-dKj" secondAttribute="top" id="zoj-Mn-rnO"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="65d-WS-qiP"/>
+                                                <exclude reference="M8b-98-hlH"/>
+                                                <exclude reference="b9s-TJ-aE2"/>
+                                                <exclude reference="od2-kq-jSw"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="65d-WS-qiP"/>
+                                                <include reference="M8b-98-hlH"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="b9s-TJ-aE2"/>
+                                                <include reference="od2-kq-jSw"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kEf-Ym-OdQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="22F-V1-IbE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kEf-Ym-OdQ" secondAttribute="bottom" constant="21" id="Cxd-kd-8HR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kEf-Ym-OdQ" secondAttribute="trailing" id="D9S-DQ-dGP"/>
+                            <constraint firstItem="kEf-Ym-OdQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Fjg-mW-pkl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="shareButton" destination="yha-NE-IZT" id="9Fh-cc-7KO"/>
+                        <outlet property="tableView" destination="3Wg-m0-BD0" id="Dgh-bE-Xoo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-23"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="yha-NE-IZT">
+            <size key="intrinsicContentSize" width="75" height="34.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

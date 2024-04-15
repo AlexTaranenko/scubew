@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderView" customModule="ScubaWatch" customModuleProvider="target">
+            <connections>
+                <outlet property="leftView" destination="Vtz-Zk-kJT" id="ibH-nG-PxB"/>
+                <outlet property="rightView" destination="djk-Yo-Ohi" id="M6b-2D-ah0"/>
+                <outlet property="slider" destination="gWx-np-5JU" id="QVG-Pd-bJM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HkO-A2-oad">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtz-Zk-kJT" customClass="SliderValueView" customModule="ScubaWatch" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="57"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="3hR-ec-c4e"/>
+                            </constraints>
+                        </view>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gWx-np-5JU">
+                            <rect key="frame" x="53" y="13.666666666666664" width="287" height="31"/>
+                        </slider>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djk-Yo-Ohi" customClass="SliderValueView" customModule="ScubaWatch" customModuleProvider="target">
+                            <rect key="frame" x="338" y="0.0" width="55" height="57"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="NwS-A3-arA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HkO-A2-oad" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JXE-Kl-0Ys"/>
+                <constraint firstItem="HkO-A2-oad" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mBJ-qe-6XF"/>
+                <constraint firstAttribute="bottom" secondItem="HkO-A2-oad" secondAttribute="bottom" id="wNt-Xo-6iw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HkO-A2-oad" secondAttribute="trailing" id="x9p-Aj-GAx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35.877862595419849" y="278.52112676056339"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up Email View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SignUpEmailViewController" id="Y6W-OH-hqX" customClass="SignUpEmailViewController" customModule="ScubaWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ3-FK-s0d" customClass="SemiBoldLabel" customModule="ScubaWatch" customModuleProvider="target">
+                                <rect key="frame" x="176" y="83" width="41.333333333333343" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qlW-oU-bRY">
+                                <rect key="frame" x="16" y="119.33333333333331" width="361" height="132"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6d-Z7-nOp" customClass="BaseTextFieldView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="UXB-Pg-GgL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-dp-9rO" customClass="BaseTextFieldView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.000000000000014" width="361" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="ze3-PK-Gt3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLf-59-VQV" customClass="BaseTextFieldView" customModule="ScubaWatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88.000000000000014" width="361" height="43.999999999999986"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="B4y-ZK-szP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD1-xl-dZo" customClass="FillButton" customModule="ScubaWatch" customModuleProvider="target">
+                                <rect key="frame" x="144.66666666666666" y="756" width="104" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="64E-vT-od4"/>
+                                    <constraint firstAttribute="height" constant="46" id="bKK-Zq-Gqc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qlW-oU-bRY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="85" id="7ao-ec-9m2"/>
+                            <constraint firstItem="qlW-oU-bRY" firstAttribute="top" secondItem="jJ3-FK-s0d" secondAttribute="bottom" constant="16" id="EgK-59-M2V"/>
+                            <constraint firstItem="PD1-xl-dZo" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="K5V-eo-6FO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qlW-oU-bRY" secondAttribute="trailing" constant="16" id="L1k-gz-slp"/>
+                            <constraint firstItem="qlW-oU-bRY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="LZa-Ol-d5a"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PD1-xl-dZo" secondAttribute="bottom" constant="16" id="NAb-CV-H6v"/>
+                            <constraint firstItem="jJ3-FK-s0d" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="Pl8-ko-ZaY"/>
+                            <constraint firstItem="jJ3-FK-s0d" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="QI8-Qc-4qc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qlW-oU-bRY" secondAttribute="trailing" constant="85" id="X23-W6-CpC"/>
+                            <constraint firstItem="qlW-oU-bRY" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="z29-Zy-utY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L1k-gz-slp"/>
+                                <exclude reference="X23-W6-CpC"/>
+                                <exclude reference="7ao-ec-9m2"/>
+                                <exclude reference="LZa-Ol-d5a"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="L1k-gz-slp"/>
+                                <include reference="LZa-Ol-d5a"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="X23-W6-CpC"/>
+                                <include reference="7ao-ec-9m2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="O1c-dp-9rO" id="sKA-Wn-ur2"/>
+                        <outlet property="nameTextField" destination="N6d-Z7-nOp" id="3XS-Gi-SXx"/>
+                        <outlet property="nextButton" destination="PD1-xl-dZo" id="64L-te-ah9"/>
+                        <outlet property="passwordTextField" destination="dLf-59-VQV" id="kiy-1H-aSO"/>
+                        <outlet property="titleLabel" destination="jJ3-FK-s0d" id="YCN-HD-6BS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-23"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="PD1-xl-dZo">
+            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
+        </designable>
+        <designable name="jJ3-FK-s0d">
+            <size key="intrinsicContentSize" width="41.333333333333336" height="20.333333333333332"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
